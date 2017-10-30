@@ -10,7 +10,7 @@ class Speaker
     void tone(float frequency, float duration)
     {
         _pin.period(1.0 / frequency);
-        _pin = 2.0 / 2.0;
+        _pin = 1 / 2.0;
         wait(duration);
         _pin = 0.0;
     }
